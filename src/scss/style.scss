@@ -2,3 +2,60 @@
 @import "reset";
 @import "global";
 @import "vars";
+
+.header {
+  padding: 40px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    padding-left: 35px;
+  }
+  &__list-link {
+    color: $title-color;
+    padding-bottom: 4px;
+    transition: all 0.3s;
+    @extend %quicksend-400;
+    &:hover {
+      color: $accent-color;
+      border-bottom: 1px solid $accent-color;
+      @extend %quicksend-500;
+    }
+    &-active {
+      color: $accent-color;
+      border-bottom: 1px solid $accent-color;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+.user__nav {
+  display: flex;
+  &-link {
+    position: relative;
+  }
+  &-link + .user__nav-link {
+    padding-left: 25px;
+  }
+  &-num {
+    position: absolute;
+    top: -9px;
+    right: -14px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
