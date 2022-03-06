@@ -7,6 +7,14 @@
   font-style: normal;
 }
 @font-face {
+  font-family: Roboto-Medium;
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
   font-family: Roboto-Regular;
   font-display: swap;
   src: url("../fonts/Roboto-Regular.woff2") format("woff2"),

@@ -59,3 +59,112 @@
     line-height: 20px;
   }
 }
+.footer {
+  background-color: $bg;
+  &-top {
+    padding: 70px 0 40px;
+    border-bottom: 4px solid #ececec;
+    display: flex;
+    &__title {
+      margin-bottom: 40px;
+      font-size: 22px;
+      color: $title-color;
+      @extend %roboto-Medium-500;
+    }
+    &__logo {
+      margin-bottom: 40px;
+      display: block;
+    }
+    &__adress,
+    &__email,
+    &__phone {
+      display: block;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+
+    &__item-contact {
+      width: 240px;
+      margin-right: 60px;
+      font-size: 16px;
+      line-height: 5px;
+    }
+    &__item-nuv {
+      width: 150px;
+      margin-right: 50px;
+    }
+    &__item-form {
+      width: 470px;
+    }
+    &__item {
+      margin-bottom: 4px;
+    }
+    &__text {
+      line-height: 26px;
+      color: $default-color;
+      font-size: 16px;
+      @extend %quicksend-500;
+      padding-top: 6px;
+      margin-bottom: 25px;
+    }
+    &__social-list {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+    }
+    &__social-item + .footer-top__social-item {
+      padding-left: 18px;
+    }
+    &__input {
+      box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+      background-color: #fff;
+      max-width: 300px;
+      width: 100%;
+      border: none;
+      padding: 12px;
+
+      &::placeholder {
+        color: $default-color;
+        font-size: 16px;
+      }
+    }
+    &__form-btn {
+      background-color: $accent-color;
+      padding: 14px 22px;
+      box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+      border: none;
+      color: #ececec;
+      text-transform: uppercase;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    &__social-link {
+      transition: all 0.3s;
+      path {
+        fill: $default-color;
+      }
+      &:hover {
+        path {
+          fill: $accent-color;
+        }
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    &__copy {
+      font-size: 12px;
+    }
+    &__accept {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+    }
+    &__accept-img {
+      margin-left: 25px;
+    }
+  }
+}
